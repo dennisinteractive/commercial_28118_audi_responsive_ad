@@ -1,5 +1,149 @@
 .billboard {
   background-color: #ededed;
-  width: 100%;
   position: relative;
+  height: 630px;
+  // height: 250px;
+  #ad-container {
+    .title-cta {
+      img.logo-tagline {
+        z-index: 100;
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        width: 190px;
+        @media screen and (min-width: 460px) {
+          width: 190px;
+        }
+         @media screen and (min-width: 800px) {
+          width: 215px;
+        }
+      }
+      img.quiz-btn {
+        z-index: 100;
+        position: absolute;
+        bottom: 68px;
+        left: 20px;
+        // HMPU
+        @media screen and (min-height: 300px) {
+          left: 0;
+          right: 0;
+          margin: auto;
+          bottom: 110px;
+          width: 175px;
+        }
+        @media screen and (min-width: 460px) {
+          bottom: 60px;
+        }
+       @media screen and (min-width: 800px) {
+          bottom: 34px;
+          left: 170px;
+        }
+      }
+      img.more-btn {
+        z-index: 100;
+        position: absolute;
+        bottom: 27px;
+        left: 20px;
+        // HMPU
+        @media screen and (min-height: 300px) {
+          left: 0;
+          right: 0;
+          margin: auto;
+          bottom: 63px;
+          width: 175px;
+        }
+        @media screen and (min-width: 460px) {
+          bottom: 20px;
+        }
+        @media screen and (min-width: 800px) {
+          bottom: 34px;
+        }
+      }
+    }
+    .small-cars {
+      .q3-small {
+        img {
+          position: absolute;
+          right: 0;
+        }
+        img.letter {
+          width: 70px;
+          right: 31px;
+          top: 18px;
+          // HMPU
+          @media screen and (min-height: 300px) {
+            left: 0;
+            right: 0;
+            margin: auto;
+            top: 170px;
+            width: 110px;
+          }
+          // Mobile wide
+          @media screen and (min-width: 460px) {
+            width: 65px;
+            right: 95px;
+            top: 10px;
+          }
+        }
+        img.car {
+          bottom: 18px;
+          width: 275px;
+          right: -100px;
+          @media screen and (min-height: 300px) {
+            left: 0;
+            right: 0;
+            margin: auto;
+            bottom: 185px;
+          }
+          @media screen and (min-width: 375px) {
+            right: -50px;
+          }
+          @media screen and (min-width: 460px) {
+            width: 320px;
+            bottom: 10px;
+          }
+        }
+      }
+      @media screen and (min-width: 700px) {
+        visibility: hidden;
+      }
+    }
+    .cars {
+      top: 7px;
+      visibility: hidden;
+      @media screen and (min-width: 700px) {
+        visibility: visible;
+      }
+      .q2-car {
+        img {
+          position: absolute;
+          right: 3px;
+          top: 12px;
+          width: 487px;
+          @media screen and (min-width: 900px) {
+            width: 587px;
+            top: -29px;
+          }
+        }
+      }
+      .q3-car {
+        
+      }
+    }
+    .border {
+      .slice {
+        position: absolute;
+        right: 0;
+        opacity: 0.9;
+        bottom: -10px;
+        width: 75%;
+        max-width: 500px;
+         // HMPU
+        @media screen and (min-height: 300px) {
+          width: 100%;
+          bottom: 0;
+        }
+      }
+    }
+  }
 }
