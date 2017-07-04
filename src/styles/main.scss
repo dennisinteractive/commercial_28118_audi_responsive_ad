@@ -1,73 +1,11 @@
 .billboard {
   background-color: #ededed;
   position: relative;
-  width: 100%;
   height: 600px;
-  // height: 250px;
+  @media screen and (min-width: 301px) {
+    height: 250px;
+  }
   #ad-container {
-    // .fadein {
-    //   -webkit-animation-name: fade;
-    //   -webkit-animation-iteration-count: infinite;
-    //   -webkit-animation-duration: 6s;
-    //   animation-name: fade;
-    //   animation-iteration-count: infinite;
-    //   animation-duration: 6s;
-    // }
-
-    // @-webkit-keyframes fade {
-    //   0% {opacity: 0;}
-    //   25% {opacity: 1;}
-    //   50% {opacity: 1;}
-    //   75% {opacity: 0;}
-    //   100% {opacity: 0;}
-    // }
-    // @keyframes fade {
-    //   0% {opacity: 0;}
-    //   25% {opacity: 1;}
-    //   50% {opacity: 1;}
-    //   75% {opacity: 0;}
-    //   100% {opacity: 0;}
-    // }
-
-    // .q2-small {
-    //     -webkit-animation-name: fade;
-    //     -webkit-animation-iteration-count: infinite;
-    //     -webkit-animation-duration: 8s;
-    //     animation-name: fade;
-    //     animation-iteration-count: infinite;
-    //     animation-duration: 8s;
-    //     opacity: 0;
-    // }
-    // .q3-small {
-    //   opacity: 0;
-    //     -webkit-animation-name: fade;
-    //     -webkit-animation-iteration-count: infinite;
-    //     -webkit-animation-duration: 8s;
-    //     animation-name: fade;
-    //     animation-iteration-count: infinite;
-    //     animation-duration: 8s;
-    //     -webkit-animation-delay: 2s;
-    // }
-    // .q5-small {
-    //   opacity: 0;
-    //     -webkit-animation-name: fade;
-    //     -webkit-animation-iteration-count: infinite;
-    //     -webkit-animation-duration: 8s;
-    //     animation-name: fade;
-    //     animation-iteration-count: infinite;
-    //     animation-duration: 8s;
-    //     -webkit-animation-delay: 4s;
-    // }
-    // .q7-small {
-    //   opacity: 0;
-    //     -webkit-animation-name: fade;
-    //     -webkit-animation-iteration-count: infinite;
-    //     -webkit-animation-duration: 4s;
-    //     animation-name: fade;
-    //     animation-iteration-count: infinite;
-    //     animation-duration: 8s;
-    //     -webkit-animation-delay: 6s;
-    // }
     .fade {
       color: transparent;
       opacity: 0;
@@ -153,14 +91,6 @@
     animation-delay: 9s; 
     }
 
-    //      .fade.q7-small {
-    // -webkit-animation-delay: 24s;
-    // -moz-animation-delay: 24s;
-    // -o-animation-delay: 24s;
-    // -ms-animation-delay: 24s;
-    // animation-delay: 24s; 
-    // }
-
     .title-cta {
       img.logo-tagline {
         z-index: 100;
@@ -237,6 +167,7 @@
         img.letter.q2 {
           @media screen and (min-height: 300px) {
             top: 163px;
+          }
         }
         // Mobile wide
         @media screen and (min-width: 460px) {
@@ -301,3 +232,4 @@
     }
   }
 }
+
