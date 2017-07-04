@@ -12,4 +12,5 @@
   return advert.init();
 
 })();
+
 /* END: main.js */

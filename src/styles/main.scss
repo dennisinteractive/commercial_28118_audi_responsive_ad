@@ -1,9 +1,166 @@
 .billboard {
   background-color: #ededed;
   position: relative;
-  height: 630px;
+  width: 100%;
+  height: 600px;
   // height: 250px;
   #ad-container {
+    // .fadein {
+    //   -webkit-animation-name: fade;
+    //   -webkit-animation-iteration-count: infinite;
+    //   -webkit-animation-duration: 6s;
+    //   animation-name: fade;
+    //   animation-iteration-count: infinite;
+    //   animation-duration: 6s;
+    // }
+
+    // @-webkit-keyframes fade {
+    //   0% {opacity: 0;}
+    //   25% {opacity: 1;}
+    //   50% {opacity: 1;}
+    //   75% {opacity: 0;}
+    //   100% {opacity: 0;}
+    // }
+    // @keyframes fade {
+    //   0% {opacity: 0;}
+    //   25% {opacity: 1;}
+    //   50% {opacity: 1;}
+    //   75% {opacity: 0;}
+    //   100% {opacity: 0;}
+    // }
+
+    // .q2-small {
+    //     -webkit-animation-name: fade;
+    //     -webkit-animation-iteration-count: infinite;
+    //     -webkit-animation-duration: 8s;
+    //     animation-name: fade;
+    //     animation-iteration-count: infinite;
+    //     animation-duration: 8s;
+    //     opacity: 0;
+    // }
+    // .q3-small {
+    //   opacity: 0;
+    //     -webkit-animation-name: fade;
+    //     -webkit-animation-iteration-count: infinite;
+    //     -webkit-animation-duration: 8s;
+    //     animation-name: fade;
+    //     animation-iteration-count: infinite;
+    //     animation-duration: 8s;
+    //     -webkit-animation-delay: 2s;
+    // }
+    // .q5-small {
+    //   opacity: 0;
+    //     -webkit-animation-name: fade;
+    //     -webkit-animation-iteration-count: infinite;
+    //     -webkit-animation-duration: 8s;
+    //     animation-name: fade;
+    //     animation-iteration-count: infinite;
+    //     animation-duration: 8s;
+    //     -webkit-animation-delay: 4s;
+    // }
+    // .q7-small {
+    //   opacity: 0;
+    //     -webkit-animation-name: fade;
+    //     -webkit-animation-iteration-count: infinite;
+    //     -webkit-animation-duration: 4s;
+    //     animation-name: fade;
+    //     animation-iteration-count: infinite;
+    //     animation-duration: 8s;
+    //     -webkit-animation-delay: 6s;
+    // }
+    .fade {
+      color: transparent;
+      opacity: 0;
+      z-index: 0;
+      -webkit-backface-visibility: hidden;
+      -webkit-animation: imageAnimation 30s linear infinite 0s;
+      -moz-animation: imageAnimation 30s linear infinite 0s;
+      -o-animation: imageAnimation 30s linear infinite 0s;
+      -ms-animation: imageAnimation 30s linear infinite 0s;
+      animation: imageAnimation 12s linear infinite 0s; 
+    }
+    @-webkit-keyframes imageAnimation { 
+    0% { opacity: 0;
+    -webkit-animation-timing-function: ease-in; }
+    8% { opacity: 1;
+         -webkit-animation-timing-function: ease-out; }
+    17% { opacity: 1 }
+    25% { opacity: 0 }
+    100% { opacity: 0 }
+}
+
+@-moz-keyframes imageAnimation { 
+    0% { opacity: 0;
+    -moz-animation-timing-function: ease-in; }
+    8% { opacity: 1;
+         -moz-animation-timing-function: ease-out; }
+    17% { opacity: 1 }
+    25% { opacity: 0 }
+    100% { opacity: 0 }
+}
+
+@-o-keyframes imageAnimation { 
+    0% { opacity: 0;
+    -o-animation-timing-function: ease-in; }
+    8% { opacity: 1;
+         -o-animation-timing-function: ease-out; }
+    17% { opacity: 1 }
+    25% { opacity: 0 }
+    100% { opacity: 0 }
+}
+
+@-ms-keyframes imageAnimation { 
+    0% { opacity: 0;
+    -ms-animation-timing-function: ease-in; }
+    8% { opacity: 1;
+         -ms-animation-timing-function: ease-out; }
+    17% { opacity: 1 }
+    25% { opacity: 0 }
+    100% { opacity: 0 }
+}
+
+@keyframes imageAnimation { 
+    0% { opacity: 0;
+    animation-timing-function: ease-in; }
+    8% { opacity: 1;
+         animation-timing-function: ease-out; }
+    27% { opacity: 1 }
+    35% { opacity: 0 }
+    100% { opacity: 0 }
+}
+
+    .fade.q3 {
+      -webkit-animation-delay: 6s;
+      -moz-animation-delay: 6s;
+      -o-animation-delay: 6s;
+      -ms-animation-delay: 6s;
+      animation-delay: 3s; 
+    }
+
+    .fade.q5 {
+      -webkit-animation-delay: 12s;
+        -moz-animation-delay: 12s;
+        -o-animation-delay: 12s;
+        -ms-animation-delay: 12s;
+        animation-delay: 6s; 
+    }
+    
+        .fade.q7 {
+       -webkit-animation-delay: 18s;
+    -moz-animation-delay: 18s;
+    -o-animation-delay: 18s;
+    -ms-animation-delay: 18s;
+    animation-delay: 9s; 
+    }
+
+    //      .fade.q7-small {
+    // -webkit-animation-delay: 24s;
+    // -moz-animation-delay: 24s;
+    // -o-animation-delay: 24s;
+    // -ms-animation-delay: 24s;
+    // animation-delay: 24s; 
+    // }
+
     .title-cta {
       img.logo-tagline {
         z-index: 100;
@@ -36,7 +193,6 @@
         }
        @media screen and (min-width: 800px) {
           bottom: 34px;
-          left: 170px;
         }
       }
       img.more-btn {
@@ -56,52 +212,55 @@
           bottom: 20px;
         }
         @media screen and (min-width: 800px) {
-          bottom: 34px;
+          bottom: 33px;
+          left: 186px;
         }
       }
     }
     .small-cars {
-      .q3-small {
-        img {
-          position: absolute;
+      img {
+        position: absolute;
+        right: 0;
+      }
+      img.letter {
+        width: 70px;
+        right: 48px;
+        top: 10px;
+        // HMPU
+        @media screen and (min-height: 300px) {
+          left: 0;
           right: 0;
+          margin: auto;
+          top: 170px;
+          width: 110px;
         }
-        img.letter {
-          width: 70px;
-          right: 31px;
-          top: 18px;
-          // HMPU
+        img.letter.q2 {
           @media screen and (min-height: 300px) {
-            left: 0;
-            right: 0;
-            margin: auto;
-            top: 170px;
-            width: 110px;
-          }
-          // Mobile wide
-          @media screen and (min-width: 460px) {
-            width: 65px;
-            right: 95px;
-            top: 10px;
-          }
+            top: 163px;
         }
-        img.car {
-          bottom: 18px;
-          width: 275px;
-          right: -100px;
-          @media screen and (min-height: 300px) {
-            left: 0;
-            right: 0;
-            margin: auto;
-            bottom: 185px;
-          }
-          @media screen and (min-width: 375px) {
-            right: -50px;
-          }
-          @media screen and (min-width: 460px) {
-            width: 320px;
-            bottom: 10px;
-          }
+        // Mobile wide
+        @media screen and (min-width: 460px) {
+          width: 65px;
+          right: 95px;
+          top: 5px;
+        }
+      }
+      img.car {
+        bottom: 18px;
+        width: 275px;
+        right: -100px;
+        @media screen and (min-height: 300px) {
+          left: 0;
+          right: 0;
+          margin: auto;
+          bottom: 160px;
+        }
+        @media screen and (min-width: 375px) {
+          right: -50px;
+        }
+        @media screen and (min-width: 460px) {
+          width: 320px;
+          bottom: 10px;
         }
       }
       @media screen and (min-width: 700px) {
@@ -114,20 +273,15 @@
       @media screen and (min-width: 700px) {
         visibility: visible;
       }
-      .q2-car {
-        img {
-          position: absolute;
-          right: 3px;
-          top: 12px;
-          width: 487px;
-          @media screen and (min-width: 900px) {
-            width: 587px;
-            top: -29px;
-          }
+      img {
+        position: absolute;
+        right: 3px;
+        top: 12px;
+        width: 487px;
+        @media screen and (min-width: 900px) {
+          width: 587px;
+          top: -19px;
         }
-      }
-      .q3-car {
-        
       }
     }
     .border {
