@@ -9,6 +9,8 @@
     height: 250px;
   }
   #ad-container {
+    width: 100%;
+    height: 100%;
     .fade {
       color: transparent;
       opacity: 0;
@@ -91,27 +93,29 @@
       img.logo-tagline {
         z-index: 100;
         position: absolute;
-        top: 20px;
-        left: 20px;
-        width: 190px;
+        top: 26px;
+        left: 12px;
+        width: 163px;
         @media screen and (min-width: 460px) {
           width: 190px;
         }
          @media screen and (min-width: 800px) {
           width: 215px;
+          left: 25px;
         }
       }
       img.quiz-btn {
         display: none;
         z-index: 100;
         position: absolute;
-        bottom: 68px;
-        left: 20px;
+        bottom: 72px;
+        left: 12px;
+        width: 153px;
         // HMPU
         @media screen and (min-height: 300px) {
           left: 0;
           right: 0;
-          margin: auto;
+          margin: 0 auto;
           bottom: 110px;
           width: 175px;
         }
@@ -120,6 +124,7 @@
         }
        @media screen and (min-width: 800px) {
           bottom: 34px;
+          left: 25px;
         }
       }
       img.more-btn {
@@ -132,14 +137,13 @@
         @media screen and (min-height: 300px) {
           left: 0;
           right: 0;
-          margin: auto;
-          bottom: 75px;
-          width: 185px;
+          margin: 0 auto;
+          bottom: 80px;
+          width: 175px;
         }
         @media screen and (min-width: 800px) {
           bottom: 33px;
-          width: 180px;
-          left: 27px;
+          left: 32px;
         }
       }
     }
@@ -149,9 +153,10 @@
         right: 0;
       }
       img.letter {
-        width: 70px;
-        right: 48px;
-        top: 10px;
+        width: 60px;
+        right: 34px;
+        top: 27px;
+        z-index: 100;
         // HMPU
         @media screen and (min-height: 300px) {
           left: 0;
@@ -173,14 +178,15 @@
         }
       }
       img.car {
-        bottom: 18px;
-        width: 275px;
-        right: -100px;
+        bottom: 35px;
+        width: 222px;
+        right: -56px;
         @media screen and (min-height: 300px) {
           left: 0;
           right: 0;
-          margin: auto;
+          margin: 0 auto;
           bottom: 160px;
+          width: 280px;
         }
         @media screen and (min-width: 375px) {
           right: -50px;
@@ -215,10 +221,13 @@
       .slice {
         position: absolute;
         right: 0;
-        opacity: 0.9;
-        bottom: -10px;
-        width: 75%;
+        opacity: 0.9;         
+        bottom: 0;
+        width: 100%;
         max-width: 500px;
+        @media screen and (min-width: 900px) {
+          bottom: -11px;
+        }
          // HMPU
         @media screen and (min-height: 300px) {
           width: 100%;
