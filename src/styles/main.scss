@@ -11,6 +11,13 @@
   #ad-container {
     width: 100%;
     height: 100%;
+    #clickTag {
+      width: 100%;
+      height: 100%;
+      display: block;
+      position: absolute;
+      z-index: 999;
+    }
     .fade {
       color: transparent;
       opacity: 0;
@@ -128,7 +135,7 @@
         }
       }
       img.more-btn {
-        z-index: 100;
+        z-index: 1000;
         position: absolute;
         bottom: 50px;
         width: 157px;
