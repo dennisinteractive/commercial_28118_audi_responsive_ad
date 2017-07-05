@@ -130,8 +130,8 @@
       img.more-btn {
         z-index: 100;
         position: absolute;
-        bottom: 50px;
-        width: 157px;
+        bottom: 53px;
+        width: 174px;
         left: 17px;
         // HMPU
         @media screen and (min-height: 300px) {
@@ -139,11 +139,12 @@
           right: 0;
           margin: 0 auto;
           bottom: 80px;
-          width: 175px;
+          width: 208px;
         }
         @media screen and (min-width: 800px) {
           bottom: 33px;
           left: 32px;
+          width: 208px;
         }
       }
     }
@@ -180,7 +181,7 @@
       img.car {
         bottom: 35px;
         width: 222px;
-        right: -56px;
+        right: -83px;
         @media screen and (min-height: 300px) {
           left: 0;
           right: 0;
